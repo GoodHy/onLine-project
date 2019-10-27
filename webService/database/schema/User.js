@@ -7,10 +7,12 @@ const SALT_WORK_FACTOR = 10
 
 const userSchema = new Schema({
         UserId: ObjectId,
-        userName: String,
+        userName: { unique: true, type: String },
         password: String,
         createAt: { type: Date, default: B = new Date() },
         lastLoginAt: { type: Date, default: B = new Date() }
+    }, {
+        collection: 'user'
     })
     //每次存储数据时都要执行
 userSchema.pre('save', function(next) {
