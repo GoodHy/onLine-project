@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.10.0"
+    "bcrypt": "^3.0.6",
+    "glob": "^7.1.5",
+    "koa": "^2.10.0",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.7"
   }
 }
