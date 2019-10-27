@@ -80,6 +80,7 @@ import floorComponent from "../components/floorComponent";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import { toMoney } from "@/filter/monyFilter.js";
 import goodsInfo from "../components/goodsInfoComponent";
+import URL from '@/config/serviceApi.config.js';
 let listJson = require("../js/index.json");
 export default {
   components: {
@@ -118,7 +119,7 @@ export default {
     //   })
     // axios({
     //   method: "get",
-    //   url: "https://www.easy-mock.com/mock/5db40ac4a551da065cc3c797/index/index"
+    //   url: URL.getShopingMallInfo
     // })
     //   .then(function(res) {
     //     if(res.status==200){
