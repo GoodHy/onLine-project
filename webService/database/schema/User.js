@@ -28,4 +28,18 @@ userSchema.pre('save', function(next) {
 
     })
 })
+userSchema.methods = {
+    //密码对比
+    comparePassword: (_password, password) => {
+        return new Promise((reslove, reject) => {
+            bcrypt.compare(_password, password, (err, isMatch) => {
+                if (!err) {
+                    reslove(isMatch)
+                } else {
+                    reject(err)
+                }
+            })
+        })
+    }
+}
 mongoose.model('User', userSchema);
