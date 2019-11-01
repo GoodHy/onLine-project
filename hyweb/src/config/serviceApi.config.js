@@ -1,4 +1,4 @@
-const BASEURL = "http://localhost:3001/"; //基础服务地址
+const BASEURL = "http://service.woniubuhuipao.cn/"; //基础服务地址
 const MOCKDATA = "https://www.easy-mock.com/mock/5db40ac4a551da065cc3c797/index/"
 const URL = {
     getShopingMallInfo: MOCKDATA + 'index',
