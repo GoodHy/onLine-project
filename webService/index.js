@@ -15,6 +15,7 @@ app.use(bodyParser())
 //引入用户模块
 let user = require('./webServiceController/user.js')
 let goods = require('./webServiceController/good.js')
+let insert = require('./webServiceController/insert.js')
 
 
 
@@ -23,6 +24,7 @@ let router = new Router()
 router.use('/user', user.routes())
 //装载子路由一定要对应相应的子路由(===>>goods.routes())
 router.use('/goods', goods.routes())
+router.use('/insert', insert.routes())
     //加载路由中间件
 app.use(router.routes())
 app.use(router.allowedMethods())

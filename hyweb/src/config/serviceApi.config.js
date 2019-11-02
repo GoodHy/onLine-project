@@ -1,8 +1,6 @@
 const BASEURL = "http://service.woniubuhuipao.cn/"; //基础服务地址
-const MOCKDATA = "https://www.easy-mock.com/mock/5db40ac4a551da065cc3c797/index/"
 const URL = {
-    getShopingMallInfo: MOCKDATA + 'index',
-    getGoodsInfo: BASEURL + 'getGoodsInfo',
+    getShopingMallInfo: BASEURL + 'goods/index',
     registerUser: BASEURL + 'user/register',
     login: BASEURL + 'user/login',
     getDetailGoodsInfo:BASEURL + 'goods/goodDetailInfo',

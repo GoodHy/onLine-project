@@ -24,9 +24,8 @@
         <!--type bar-->
         <div class="type-bar">
             <div v-for="(cate,index) in category" :key="index">
-                <img v-lazy="cate.image" width="90%">
+                <img :src="cate.image" width="90%">
                 <span>{{cate.mallCategoryName}}</span>
-
             </div>
         </div>  
         <!--adbanner area-->
@@ -93,12 +92,16 @@
                 locationIcon: require('../assets/images/location.png'),
                 bannerPicArray:[],
                 category:[],
-                adBanner:'',
+                adBanner:'http://images.baixingliangfan.cn/advertesPicture/20180404/20180404085441_850.gif',
                 recommendGoods:[],
                 floor1:[],
                 floor2:[],
                 floor3:[],
-                floorName:{},
+                floorName:{
+                    "floor3": "营养奶品",
+                    "floor2": "新鲜水果",
+                    "floor1": "休闲食品"
+                },
                 hotGoods:[],  //热卖商品
               
             }
@@ -118,18 +121,12 @@
                 console.log(response)
                 if(response.status==200){
                     this.category=response.data.data.category;
-                    this.adBanner = response.data.data.advertesPicture.PICTURE_ADDRESS;
                     this.bannerPicArray= response.data.data.slides;
                     this.recommendGoods = response.data.data.recommend;
                     this.floor1 = response.data.data.floor1;
                     this.floor2 = response.data.data.floor2;
                     this.floor3 = response.data.data.floor3;
-                    this.floorName = response.data.data.floorName;
                     this.hotGoods = response.data.data.hotGoods;
-
-                   
-                   
-            
                 }
             })
             .catch(error=>{

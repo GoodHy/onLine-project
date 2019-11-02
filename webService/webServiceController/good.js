@@ -149,4 +149,92 @@ router.post('/getGoodsListByCategorySubID',async(ctx)=>{
         }
     })
 })
+
+router.get('/index',async(ctx)=>{
+let Sliders = mongoose.model('Slider')
+let FloorOnes = mongoose.model('FloorOne')
+let FloorTwos = mongoose.model('FloorTwo')
+let FloorThrees = mongoose.model('FloorThree')
+let CategroyMains = mongoose.model('CategroyMain')
+let HotGoods = mongoose.model('HotGood')
+let Cecommends = mongoose.model('Recommend')
+   let _data = {
+
+   }
+   //轮播
+   await Sliders.find().then(async(result)=>{
+    _data.slides=result
+        }).catch(err=>{
+            ctx.body={
+                code:500,
+                message:"服务器错误"
+            }
+   })
+   //一楼
+   await FloorOnes.find().then(async(result)=>{
+    _data.floor1=result
+        }).catch(err=>{
+            ctx.body={
+                code:500,
+                message:"floor1服务器错误"
+            }
+   })
+    //二楼
+    await FloorTwos.find().then(async(result)=>{
+        _data.floor2=result
+            }).catch(err=>{
+                ctx.body={
+                    code:500,
+                    message:"二楼服务器错误"
+                }
+       })
+     //三楼
+     await FloorTwos.find().then(async(result)=>{
+        _data.floor3=result
+            }).catch(err=>{
+                ctx.body={
+                    code:500,
+                    message:"三楼服务器错误"
+                }
+       })
+    //category
+    await CategroyMains.find().then(async(result)=>{
+        _data.category=result
+            }).catch(err=>{
+                ctx.body={
+                    code:500,
+                    message:"三楼服务器错误"
+                }
+       })
+    //hotgood
+    await HotGoods.find().then(async(result)=>{
+        _data.hotGoods=result
+            }).catch(err=>{
+                ctx.body={
+                    code:500,
+                    message:"三楼服务器错误"
+                }
+       })
+    //cecommend
+    await Cecommends.find().then(async(result)=>{
+        _data.recommend=result
+            }).catch(err=>{
+                ctx.body={
+                    code:500,
+                    message:"三楼服务器错误"
+                }
+       })
+    if(_data.slides&&_data.recommend&&_data.hotGoods&&_data.category&&_data.floor1&&_data.floor2&&_data.floor3){
+        ctx.body={
+            code:200,
+            message:"success",
+            data:_data
+        }
+    }else{
+        ctx.body={
+            code:500,
+            message:"数据不全错误"
+        }
+    }
+})
 module.exports = router;

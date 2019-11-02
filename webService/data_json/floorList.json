@@ -1,0 +1,50 @@
+{
+  "floor1":[{
+      "goodsId": "e53c046465204d4fb8f22431cc2807e7",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180109_6316.jpg"
+    }, {
+      "goodsId": "f36f6dd8f62247d5846eaa9b3f269cbc",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180151_6180.jpg"
+    }, {
+      "goodsId": "72a3ec63956347a2a9f113589fe79c03",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180217_3970.jpg"
+    }, {
+      "goodsId": "a632bfb3818541da8e6843d6d0dbd917",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180257_2378.jpg"
+    }, {
+      "goodsId": "6694401a30a940f6ae437d541b7fd26d",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180427_8557.jpg"
+    }],
+    "floor2": [{
+      "goodsId": "ae4e71807a91460792670b657fa3ed3a",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407181423_15.jpg"
+    }, {
+      "goodsId": "2a398a5048074fc3b36bc8026bf9dc65",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407181216_8263.jpg"
+    }, {
+      "goodsId": "b37577ce45ee4cc6ba162959933dbac8",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407181247_7554.jpg"
+    }, {
+      "goodsId": "43912e1f7b7842cab40fcdee9dbe8758",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407181316_6196.jpg"
+    }, {
+      "goodsId": "98922617593e44c9a5880329a4cf0fd0",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407181348_4054.jpg"
+    }],
+    "floor3": [{
+      "goodsId": "d0fabe0c966043cb8313fa55de9c555b",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180547_3253.jpg"
+    }, {
+      "goodsId": "36360da2ec084316a100c2df1c714e37",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180631_4071.jpg"
+    }, {
+      "goodsId": "eb47b495b65d42b8a1fc5823dcd5589c",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180705_7181.jpg"
+    }, {
+      "goodsId": "7f6e857e83b240508836717c8764a0b0",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180407/20180407180736_2822.jpg"
+    }, {
+      "goodsId": "c7cb656294ea48d3b224ddee5fdd9647",
+      "image": "http://images.baixingliangfan.cn/homeFloor/20180408/20180408081756_7181.jpg"
+    }]  
+}
